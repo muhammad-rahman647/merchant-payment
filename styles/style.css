@@ -1,0 +1,928 @@
+:root {
+  --color-grey-dark-1: #878789;
+}
+
+@font-face {
+  font-family: 'halyard_displayregular';
+  src: url('/fonts/halyard_display_regular-webfont.woff2') format('woff2'), url('/fonts/halyard_display_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roobertregular';
+  src: url('/fonts/halyard_display_regular-webfont.woff2') format('woff2'), url('/fonts/roobert-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* ================ Header ================ */
+
+header {
+  font-family: 'roobertregular';
+
+  background-image: url('/images/banner-background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  max-width: 100%;
+
+  position: relative;
+
+  height: 90vh;
+  max-height: 90vh;
+}
+
+.banner-container {
+  max-width: 70%;
+  height: 100%;
+  margin: auto;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.top-navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+
+  padding: 0.6rem 3rem 0.6rem 0;
+  font-weight: 600;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.top-navbar__1 {
+  display: flex;
+  align-items: center;
+
+  flex: 0 1 60%;
+}
+
+.top-navbar__2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  flex: 1;
+}
+
+.top-navbar__1__logo-container {
+  flex: 0 1 30%;
+}
+
+.navbar-list {
+  list-style: none;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.navbar-list li {
+  margin: 0 1.5rem;
+}
+
+.navbar-list li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.banner-left {
+  height: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  flex: 1;
+
+  /* padding: 5rem 0rem 0rem 6rem; */
+  /* padding-left: 4rem; */
+}
+
+.banner-left__1 {
+  flex: 0 1 75%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-left__2 {
+  font-family: 'roobertregular';
+  color: #525255;
+  flex: 0 1 25%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.banner-left__2 p {
+  width: 50%;
+  margin-left: 1rem;
+}
+
+.banner-left h1 {
+  width: 70%;
+  line-height: 1.3;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'halyard_displayregular';
+}
+
+.banner-right {
+  height: 100%;
+  flex: 1;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+/* =================== TOGETHER SECTION ============================== */
+
+.together-section {
+  color: #fff;
+  padding: 7rem 0;
+
+  background-image: url('/images/together-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.together-section__container {
+  width: 60%;
+  margin: auto;
+}
+
+.together-section__container__headings {
+  text-align: center;
+}
+
+.together-section__container__headings > span {
+  font-family: 'roobertregular';
+}
+
+.together-section__container__headings > h1 {
+  font-family: 'halyard_displayregular';
+  font-size: 2.6rem;
+}
+
+.together-section__container__paragraphs {
+  padding: 4rem 0;
+  line-height: 1.9;
+  color: #bbbbc2;
+
+  font-size: 1.1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+.together-section__container__paragraphs__1 {
+  text-align: right;
+}
+
+/* ================= Merchant Account ================ */
+
+.merchant-account__container {
+  width: 60%;
+  margin: auto;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.merchant-account__container__left {
+  flex: 0 1 90%;
+}
+
+.merchant-account__container__right {
+  padding-top: 5rem;
+}
+
+/* =================== Crypto Merchants SECTION ================ */
+.crypto-merchants-section {
+  padding: 2rem 0;
+}
+
+.crypto-merchants-section__container {
+  width: 55%;
+  margin: auto;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.crypto-merchants-section__para {
+  width: 25%;
+  margin: auto;
+}
+
+.crypto-merchants-section__para > p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  font-family: 'roobertregular';
+  color: #646466;
+  text-align: center;
+}
+
+.crypto-merchants-section__container__left {
+  padding-top: 5rem;
+  flex: 0 1 60%;
+}
+
+.crypto-merchants-section__container__right {
+  flex: 1;
+}
+
+.crypto__title--line {
+  width: 30px;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.crypto__title--mix {
+  font-size: 1.5rem;
+  font-family: 'halyard_displayregular';
+  font-weight: 400;
+
+  position: relative;
+}
+
+.crypto__heading {
+  font-family: 'roobertregular';
+  font-size: 2.7rem;
+
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.crypto__para {
+  width: 75%;
+  font-family: 'roobertregular';
+  color: #525255;
+}
+
+.crypto-merchants-section__para {
+  width: 50%;
+  margin: auto;
+}
+
+/* =================== CANNABIS-MERCHANTS-SECTION ================ */
+
+.cannabis-merchants-section {
+  padding: 4rem 0;
+}
+
+.cannabis-merchants-section__container {
+  width: 60%;
+  margin: auto;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.cannabis-merchants-section__para {
+  width: 25%;
+  margin: auto;
+}
+
+.cannabis-merchants-section__para > p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  font-family: 'roobertregular';
+  color: #646466;
+  text-align: center;
+}
+
+.cannabis-merchants-section__container__right {
+  padding-top: 5rem;
+}
+
+.cannabis__title--line {
+  width: 30px;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cannabis__title--mix {
+  font-size: 1.5rem;
+  font-family: 'halyard_displayregular';
+  font-weight: 400;
+
+  position: relative;
+}
+
+.cannabis__heading {
+  font-family: 'roobertregular';
+  font-size: 2.7rem;
+
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.cannabis__para {
+  width: 75%;
+  font-family: 'roobertregular';
+  color: #525255;
+}
+
+.btn-container {
+  text-align: center;
+
+  padding: 4rem;
+}
+
+/* ================ Secure Casino Payment ============== */
+
+.secure-casino-payment-section {
+  padding-top: 7rem;
+  padding-bottom: 2.5rem;
+
+  background-image: url('/images/shape.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.secure-casino-payment-section__container {
+  width: 60%;
+  margin: auto;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.secure-casino-payment-section__container__left {
+  padding-top: 5rem;
+  flex: 0 1 60%;
+}
+
+.secure-casino-payment-section__container__right {
+  flex: 1;
+}
+
+.secure-casino__title--line {
+  width: 30px;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  margin-right: 0.5rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.secure-casino__title--mix {
+  font-size: 1.5rem;
+  font-family: 'halyard_displayregular';
+  font-weight: 400;
+
+  position: relative;
+}
+
+.secure-casino__heading {
+  font-family: 'roobertregular';
+  font-size: 2.7rem;
+
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.secure-casino__para {
+  width: 75%;
+  font-family: 'roobertregular';
+  color: #525255;
+}
+
+.casino-btn-container {
+  padding: 1rem 0;
+}
+
+.secure-casino-payment-section__para {
+  width: 55%;
+  margin: auto;
+  font-family: 'roobertregular';
+  color: #525255;
+
+  margin-top: 5rem;
+
+  min-height: 33rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.secure-casino-payment-section__para > p {
+  font-size: 1rem;
+  padding: 5rem 5rem 2rem 5rem;
+  text-align: center;
+  line-height: 1.9;
+  /* word-spacing: ; */
+}
+
+/* ============= button ============= */
+.btn {
+  font-family: 'roobertregular';
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
+  padding: 0.2rem 0rem;
+
+  position: relative;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+/* ====================== Leisure Pay Journey ============================= */
+
+.leisure-pay-section {
+  padding: 6rem 0;
+
+  background-image: url('/images/leisure-pay.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 65rem;
+  min-height: 65rem;
+}
+
+.leisure-pay__headings {
+  padding-left: 18rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 20%;
+}
+
+.leisure-pay__headings--1 {
+  flex: 0 1 55%;
+}
+
+.leisure-pay__headings--2 {
+  flex: 1;
+}
+
+.leisure-pay__headings h6 {
+  font-family: 'roobertregular';
+  font-size: 1.2rem;
+
+  font-weight: 400;
+
+  margin: 0.5rem 0;
+}
+
+.leisure-pay__headings h1 {
+  font-family: 'halyard_displayregular';
+  font-size: 3rem;
+
+  margin: 0.5rem 0;
+}
+
+.leisure-pay__headings p {
+  font-family: 'roobertregular';
+  color: #bbbbc2;
+
+  font-weight: 400;
+
+  font-size: 1.1rem;
+
+  width: 55%;
+}
+
+.leisure-pay__middle {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leisure-pay__middle__questioners {
+  font-family: 'halyard_displayregular';
+  padding-left: 18rem;
+
+  display: flex;
+  align-items: center;
+
+  margin: 1.2rem 0;
+}
+
+.leisure-pay__middle__questioners__heading {
+  font-size: 2.5rem;
+  position: relative;
+  /* margin: 0.8rem 0; */
+}
+
+.questioners__heading--1 {
+  flex: 0 1 25%;
+  color: #b9e1ec;
+}
+
+.questioners__heading--2 {
+  flex: 0 1 25%;
+  color: #ffeda3;
+}
+
+.questioners__heading--3 {
+  flex: 0 1 25%;
+  color: #fdfdfd;
+}
+
+.questioners__heading--4 {
+  flex: 0 1 25%;
+  color: #deef75;
+}
+
+.leisure-pay__middle__questioners__heading--text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #fff;
+
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.leisure-pay__middle__line-container {
+  font-family: 'halyard_displayregular';
+  padding-left: 18.4rem;
+
+  display: flex;
+  align-items: center;
+
+  margin: 1.2rem 0;
+}
+
+.leisure-pay__middle__questioners__line {
+  border-top: 1px solid #ccc;
+  flex: 0 1 25%;
+
+  position: relative;
+}
+
+.leisure-pay__middle__questioner__line--dot {
+  position: absolute;
+  top: -7px;
+  left: 0;
+
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-color: #b9e1ec;
+  border-radius: 50%;
+}
+
+.leisure-pay__middle__questioner__paragraph {
+  font-family: 'roobertregular';
+  color: #ffffff;
+  font-weight: 400;
+
+  width: 60%;
+  margin: 2rem 0;
+  /* margin: 1.5rem 0; */
+}
+
+.leisure-pay__middle__questioner__paragraph__btn {
+  font-family: 'roobertregular';
+  color: #9e9ea1;
+
+  font-size: 0.7rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.leisure-pay__bottom-lines {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+
+  height: 30%;
+}
+
+.leisure-pay__bottom-lines h4 {
+  font-family: 'roobertregular';
+  font-weight: 400;
+
+  font-size: 1.4rem;
+
+  margin: 1rem 0;
+}
+
+.leisure-pay__bottom-lines h1 {
+  font-family: 'halyard_displayregular';
+  font-size: 3rem;
+  letter-spacing: 2px;
+
+  margin: 0.5rem 0;
+}
+
+.leisure-pay__btn {
+  font-family: 'roobertregular';
+  border: none;
+  outline: none;
+
+  margin: 2rem 0;
+  font-weight: 500;
+
+  padding: 1rem 2rem;
+  border-radius: 3px;
+
+  background-color: rgb(222, 239, 117);
+  cursor: pointer;
+}
+
+/* =================== FOOTER ============================== */
+
+.footer {
+  font-family: 'roobertregular';
+
+  /* width: 70%;
+  margin: auto; */
+
+  padding: 4rem 5rem 10rem 16rem;
+
+  border-bottom: 1px solid #ccc;
+
+  /* user-select: none; */
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__container__section-1 {
+  flex: 0 1 30%;
+}
+
+.footer__container__section-2 {
+  flex: 0 1 35%;
+}
+
+.footer__container__section-3 {
+  flex: 0 1 35%;
+}
+
+.footer__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-icons__container {
+  display: flex;
+  align-items: flex-start;
+
+  margin: 3rem 0;
+}
+
+.icons-container {
+  margin: 0rem 0.4rem;
+}
+
+.icons-container > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ic-con {
+  padding: 0.6rem 0.8rem;
+  background-color: hsl(240, 1%, 95%);
+
+  border-radius: 50%;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.footer__links__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__links {
+  list-style: none;
+  color: var(--color-grey-dark-1);
+
+  font-weight: 300;
+}
+
+.footer__links--1 {
+  flex: 0 1 40%;
+}
+
+.footer__links--2 {
+  flex: 1;
+}
+
+.footer__links__item {
+  margin-bottom: 2rem;
+}
+
+.footer__links__item > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer-bottom__text {
+  font-family: 'roobertregular';
+  display: inline-block;
+
+  color: var(--color-grey-dark-1);
+}
+
+/* ============ modal ============= */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.5);
+
+  backdrop-filter: blur(5px); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: auto;
+  padding: 0;
+  width: 65%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 3rem 3.5rem;
+}
+
+.modal-heading {
+  font-family: 'halyard_displayregular';
+  font-size: 2.7rem;
+
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.modal__subtitle {
+  font-family: 'roobertregular';
+
+  width: 100%;
+  padding: 0 16rem;
+  margin-top: 1rem;
+
+  color: #525255;
+}
+
+.modal__para {
+  font-family: 'roobertregular';
+  color: #525255;
+}
+
+.modal-button {
+  font-family: 'roobertregular';
+  border: none;
+  outline: none;
+
+  margin: 0.5rem 0;
+  font-weight: 500;
+
+  padding: 1rem 2rem;
+  border-radius: 3px;
+
+  background-color: rgb(222, 239, 117);
+  cursor: pointer;
+}
+
+/* ============ common ============== */
+
+.section-line {
+  width: 30px;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-family: 'halyard_displayregular';
+  font-weight: 400;
+
+  position: relative;
+}
+
+/* ==================== utilities ======================= */
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.display-block {
+  display: block;
+}
+
+/* ================= responsiveness ================== */
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
